@@ -1,6 +1,7 @@
 $(document).ready(function(){
 
     $('.background').height( $(window).height() );
+    $('.fancybox').fancybox();
     $(window).resize(function(){
         $('.background').height( $(window).height() );
     });	

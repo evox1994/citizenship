@@ -10,6 +10,7 @@ body {
 	overflow-x: hidden;
 	-webkit-text-size-adjust: none;
 	color: #000000;
+	font-family: 'Montserrat', sans-serif;
 }
 a {
 	text-decoration: none;
@@ -43,7 +44,7 @@ button:hover {
 	max-width: 1230px;
 	margin: 0px auto;
 	padding: 0 30px;
-	font-family: 'Montserrat', sans-serif;
+	box-sizing: border-box;
 }
 .button {
 	display: inline-block;
@@ -553,7 +554,7 @@ button:hover {
 		margin-bottom: 20px;
 	}
 	.header .menu-list {
-		margin-right: 10px;
+		margin-right: 0px;
 	}
 	.header .country-list li {
 		margin: 0 10px;
@@ -574,5 +575,7 @@ button:hover {
 	}
 }
 @media screen and (max-width: 767px){
-
+	.b-block {
+		padding: 0 10px;
+	}
 }

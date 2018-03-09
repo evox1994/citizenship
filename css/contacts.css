@@ -1,0 +1,129 @@
+.b-1 {
+	background-color: #ffffff;
+}
+.b-1 .b-block {
+	padding-top: 118px;
+	padding-bottom: 0;
+}
+.b-1 .second-caption {
+	margin-bottom: 70px;
+}
+.b-1-list {
+	margin-bottom: 40px;
+}
+.b-1-list li {
+	display: inline-block;
+	vertical-align: top;
+	text-align: left;
+	margin: 0 70px;
+}
+.b-1-list .list-name {
+	font-weight: 600;
+	margin-bottom: 20px;
+	font-size: 22px;
+}
+.b-1-list .list-a {
+	display: block;
+	padding-left: 38px;
+	position: relative;
+	font-weight: 400;
+	font-size: 21px;
+	margin-bottom: 10px;
+}
+.b-1-list .list-a::before {
+	content: '';
+	display: block;
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	background-image: url("../i/phone-icon-4.png");
+	left: 0;
+	top: calc(50% - 12px);
+}
+.b-1-list .addres {
+	padding-left: 38px;
+	position: relative;
+	font-weight: 400;
+	font-size: 21px;
+	margin-bottom: 10px;
+}
+.b-1-list .addres::before {
+	content: '';
+	display: block;
+	position: absolute;
+	width: 22px;
+	height: 26px;
+	background-image: url("../i/addres-icon-4.png");
+	left: 0;
+	top: calc(50% - 13px);
+}
+.b-1-list .mail {
+	padding-left: 38px;
+	position: relative;
+	font-weight: 400;
+	font-size: 21px;
+	margin-bottom: 10px;
+}
+.b-1-list .mail::before {
+	content: '';
+	display: block;
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	background-image: url("../i/mail-icon-4.png");
+	left: 0;
+	top: calc(50% - 12px);
+}
+.b-1-list .skype {
+	padding-left: 38px;
+	position: relative;
+	font-weight: 400;
+	font-size: 21px;
+	margin-bottom: 10px;
+}
+.b-1-list .skype::before {
+	content: '';
+	display: block;
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	background-image: url("../i/skype-icon-4.png");
+	left: 0;
+	top: calc(50% - 12px);
+}
+.social {
+	text-align: center;
+	margin: 0 0 10px;
+}
+.social a {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 5px;
+}
+.social .whatsup {
+	width: 39px;
+	height: 39px;
+	background-image: url("../i/whatsup.png");
+}
+.social .wiber {
+	width: 40px;
+	height: 42px;
+	background-image: url("../i/wiber.png");
+}
+.social .telegram {
+	width: 37px;
+	height: 37px;
+	background-image: url("../i/telegram.png");
+}
+
+
+@media screen and (max-width: 1279px) {
+	.b-1-list li {
+		display: block;
+		max-width: 240px;
+		margin: 0 auto 40px;
+	}
+	.social {
+		text-align: left;
+	}
+}

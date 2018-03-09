@@ -1,0 +1,76 @@
+.b-1 {
+	background-color: #ffffff;
+}
+.b-1 .b-block {
+	padding-top: 118px;
+	padding-bottom: 83px;
+	text-align: left;
+}
+.b-1 .second-caption {
+	margin-bottom: 35px;
+}
+.b-1 .caption-text {
+	font-size: 24px;
+	font-weight: 500;
+	margin-bottom: 20px;
+}
+.b-1-list {
+	max-width: 870px;
+	width: 100%;
+}
+.b-1-list li {
+	display: block;
+	margin-bottom: 30px;
+}
+.b-1-list .list-video {
+	width: 100%;
+	height: 500px;
+	margin-bottom: 25px;
+	border: 1px solid #000000;
+}
+.b-1-list .list-text {
+	display: block;
+	width: 100%;
+}
+.b-1-list .list-text p {
+	display: block;
+	font-weight: 400;
+	font-size: 16px;
+}
+
+.fixed-window {
+	position: fixed;
+	top: 189px;
+	left: calc(50% + 315px);
+	z-index: 100;
+	width: 270px;
+	height: 175px;
+	background-size: cover;
+	background-image: url("../i/back-window.png");
+	margin: 0;
+	text-align: center;
+}
+.window-text {
+	font-weight: 500;
+	color: #ffffff;
+	text-align: center;
+	line-height: 1.2;
+	font-size: 18px;
+	margin: 25px 0 20px; 
+}
+.fixed-window .button {
+	padding: 15px 20px;
+	border-radius: 30px;
+}
+
+@media screen and (max-width: 1279px) {
+	.fixed-window {
+		display: none;
+	}
+	.b-1-list .list-text {
+		width: 100%;
+	}
+	.b-1-list .list-video {
+		height: 300px;
+	}
+}
