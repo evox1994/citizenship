@@ -45,7 +45,7 @@
 			</ul>
 			<div class="menu-contacts">
 				<a href="tel: +7800000000" class="phone-a">8 (800) 00 00 00</a>
-				<a href="#" class="button button-red btn-anim">Узнать шансы<span></span></a>
+				<a href="#popup-more" class="button button-red btn-anim fancybox">Узнать шансы<span></span></a>
 			</div>
 		</div>
 	</div>
@@ -77,18 +77,33 @@
 				<form>
 					<div class="submit-caption">Узнайте свои шансы на получение гражданства ЕС,<br><span>ответив на 4 простых вопроса</span></div>
 					<div class="submit-price">это бесплатно</div>
-					<div class="submit-text">Есть ли у Вас корни в странах Евросоюза?</div>
+					<div class="submit-text submit-step-1 active">Есть ли у Вас корни в странах Евросоюза?</div>
+					<div class="submit-text submit-step-2">Были ли у Вас судимости в России или Европе?</div>
+					<div class="submit-text submit-step-3">Лишались ли Вы гражданства Евросоюза?</div>
 					<ul class="submit-list">
-						<li class="active"></li>
-						<li></li>
-						<li></li>
-						<li></li>
+						<li class="active" id="li-step-1-1" data-next="#li-step-2-1" data-text=".submit-step-2"></li>
+						<li id="li-step-2-1" data-next="#li-step-3-1" data-text=".submit-step-3"></li>
+						<li id="li-step-3-1" data-next="#li-step-4-1" data-text=".submit-step-4"></li>
+						<li id="li-step-4-1" data-next="false" data-text="false"></li>
 					</ul>
 					<ul class="button-list">
 						<li>Да</li>
 						<li>Нет</li>
 					</ul>
-					<button type="submit" class="button button-blue btn-anim">Далее<span></span></button>
+					<a href="#li-step-1-1" class="button button-blue btn-anim submit-btn">Далее<span></span></a>
+					<div class="submit-step-4">
+						<ul>
+							<li>Мы попробуем найти<br>Ваших родственников</li>
+							<li>Уточним возможность<br>получения с Вашей<br>судимостью</li>
+							<li>Попробуем восстановить<br>Вас как гражданина ЕС</li>
+						</ul>
+						<div class="wrapper-form">
+							<p>Оставьте заявку, чтобы мы могли предложить варианты,  как в Вашем случае получить гражданство</p>
+							<input type="tel" placeholder="Введите телефон" required>
+							<button type="submit" class="button button-red btn-anim">Получить варианты<span></span></button>
+							<div class="button-text">Отправляя заявку, Вы соглашаетесь<br>с политикой конфиденциальности</div>
+						</div>
+					</div>
 				</form>
 			</div>
 		</div>
@@ -279,6 +294,40 @@
 		</div>
 	</div>
 
-	<div style="display:none;"></div>
+	<div style="display:none;">
+		<div class="popup-more" id="popup-more">
+			<form>
+				<div class="submit-caption">Узнайте свои шансы на получение гражданства ЕС,<br><span>ответив на 4 простых вопроса</span></div>
+				<div class="submit-price">это бесплатно</div>
+				<div class="submit-text submit-step-1 active">Есть ли у Вас корни в странах Евросоюза?</div>
+				<div class="submit-text submit-step-2">Были ли у Вас судимости в России или Европе?</div>
+				<div class="submit-text submit-step-3">Лишались ли Вы гражданства Евросоюза?</div>
+				<ul class="submit-list">
+					<li class="active" id="li-step-1-2" data-next="#li-step-2-2" data-text=".submit-step-2"></li>
+					<li id="li-step-2-2" data-next="#li-step-3-2" data-text=".submit-step-3"></li>
+					<li id="li-step-3-2" data-next="#li-step-4-2" data-text=".submit-step-4"></li>
+					<li id="li-step-4-2" data-next="false" data-text="false"></li>
+				</ul>
+				<ul class="button-list">
+					<li>Да</li>
+					<li>Нет</li>
+				</ul>
+				<a href="#li-step-1-2" class="button button-blue btn-anim submit-btn">Далее<span></span></a>
+				<div class="submit-step-4">
+					<ul>
+						<li>Мы попробуем найти<br>Ваших родственников</li>
+						<li>Уточним возможность<br>получения с Вашей<br>судимостью</li>
+						<li>Попробуем восстановить<br>Вас как гражданина ЕС</li>
+					</ul>
+					<div class="wrapper-form">
+						<p>Оставьте заявку, чтобы мы могли предложить варианты,  как в Вашем случае получить гражданство</p>
+						<input type="tel" placeholder="Введите телефон" required>
+						<button type="submit" class="button button-red btn-anim">Получить варианты<span></span></button>
+						<div class="button-text">Отправляя заявку, Вы соглашаетесь<br>с политикой конфиденциальности</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
 </body>
 </html>

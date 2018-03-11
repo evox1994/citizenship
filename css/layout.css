@@ -301,6 +301,200 @@ button:hover {
 	animation: anim_icon 1s ease infinite;
 }
 
+.popup-more {
+	display: block;
+	box-sizing: border-box;
+	text-align: center;
+	width: 100%;
+	padding: 32px 9px;
+	max-width: 572px;
+	background-color: #ffffff;
+	color: #000000;
+	border-radius: 7px;
+	overflow: hidden;
+}
+.popup-more .submit-caption {
+	font-size: 18px;
+	line-height: 1.2;
+	margin-bottom: 20px;
+	font-weight: 500;
+}
+.popup-more .submit-caption span {
+	color: #46d4c4;
+}
+.popup-more .submit-price {
+	font-size: 18px;
+	color: rgb(198, 198, 198);
+	text-decoration: underline;
+	margin-bottom: 30px;
+}
+.popup-more .submit-text {
+	display: none;
+	padding: 10px 0;
+	font-size: 18px;
+	font-weight: 500;
+	max-width: 480px;
+	margin: 0 auto 35px;
+	border: 1px solid rgb(137, 137, 137);
+	border-radius: 30px;
+}
+.popup-more .submit-text.active {
+	display: block;
+}
+.popup-more .submit-list {
+	margin-bottom: 30px;
+}
+.popup-more .submit-list li {
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	background-color: rgb(137, 137, 137);
+	margin-right: 130px;
+}
+.popup-more .submit-list li::before {
+	content: '';
+	position: absolute;
+	top: calc(50% - 1px);
+	right: 100%;
+	display: block;
+	width: 134px;
+	height: 2px;
+	background-color: rgb(137, 137, 137);
+}
+.popup-more .submit-list li:first-child:before {
+	display: none;
+} 
+.popup-more .submit-list li:last-child {
+	margin-right: 0;
+}
+.popup-more .submit-list li.active {
+	background-color: #46d4c4;
+}
+.popup-more .submit-list li.active::before {
+	background-color: #46d4c4;
+}
+.popup-more .button-list {
+	margin-bottom: 40px;
+}
+.popup-more .button-list li {
+	display: inline-block;
+	vertical-align: top;
+	font-size: 18px;
+	font-weight: 500;
+	position: relative;
+	z-index: 1;
+	padding-left: 30px;
+	margin: 0 30px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.popup-more .button-list li:hover {
+	cursor: pointer;
+}
+.popup-more .button-list li::before {
+	content: '';
+	position: absolute;
+	display: block;
+	left: 0;
+	top: 0;
+	border-radius: 50%;
+	width: 20px;
+	height: 20px;
+	border: 2px solid rgb(137, 137, 137);
+}
+.popup-more .button-list li.active::before {
+	background-color: #ff6c72;
+}
+.popup-more .submit-step-4 {
+	display: none;
+}
+.popup-more .submit-step-4.active {
+	display: block;
+}
+.popup-more .submit-step-4 ul {
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 22px;
+}
+.popup-more .submit-step-4 ul li {
+	display: block;
+	font-size: 14px;
+	font-weight: 400;
+	margin-bottom: 10px;
+	padding-left: 31px;
+	position: relative;
+	text-align: left;
+}
+.popup-more .submit-step-4 ul li::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 21px;
+	height: 21px;
+	background-image: url("../i/bonus-icon.png");
+}
+.popup-more .wrapper-form {
+	display: inline-block;
+	vertical-align: top;
+	width: 307px;
+	box-sizing: border-box;
+	border: 1px solid rgb(137, 137, 137);
+	border-radius: 5px;
+	padding: 8px 8px 14px 8px;
+}
+.popup-more .wrapper-form p {
+	display: block;
+	background-color: rgba(70, 147, 212, 0.5);
+	border-radius: 4px;
+	padding: 9px;
+	font-weight: 500;
+	font-size: 14px;
+	margin-bottom: 8px;
+}
+.popup-more input {
+	display: block;
+	margin: 0 auto 8px;
+	position: relative;
+	z-index: 1;
+	padding-top: 14px;
+	padding-bottom: 14px;
+	border-radius: 30px;
+	border: 0;
+	color: #000000;
+	font-size: 17px;
+	font-weight: 500;
+	text-align: center;
+	border: 1px solid rgb(137, 137, 137);
+}
+.popup-more form input::-webkit-input-placeholder {color: rgb(115, 115, 115);}
+.popup-more form input::-moz-placeholder          {color: rgb(115, 115, 115);}/* Firefox 19+ */
+.popup-more form input:-moz-placeholder           {color: rgb(115, 115, 115);}/* Firefox 18- */
+.popup-more form input:-ms-input-placeholder      {color: rgb(115, 115, 115);}
+.popup-more form input:focus::-webkit-input-placeholder {color:transparent;}
+.popup-more form input:focus::-moz-placeholder          {color:transparent;}/* Firefox 19+ */
+.popup-more form input:focus:-moz-placeholder           {color:transparent;}/* Firefox 18- */
+.popup-more form input:focus:-ms-input-placeholder      {color:transparent;}
+.popup-more .wrapper-form .button {
+	font-size: 17px;
+	font-weight: 500;
+	padding: 14px 30px;
+	border-radius: 30px;
+}
+.popup-more .wrapper-form .button-text {
+	margin-top: 10px;
+	font-weight: 400;
+	font-size: 11px;
+	line-height: 1.4;
+	color: rgb(137, 137, 137);
+}
+
 
 @-webkit-keyframes pulse {
   0% {

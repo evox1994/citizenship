@@ -67,7 +67,7 @@
 	vertical-align: top;
 	box-sizing: border-box;
 	width: 100%;
-	padding: 32px 38px;
+	padding: 32px 9px;
 	max-width: 572px;
 	border: 1px solid rgb(70, 212, 196);
 	border-radius: 7px;
@@ -89,12 +89,17 @@
 	margin-bottom: 30px;
 }
 .b-1-submit .submit-text {
+	display: none;
 	padding: 10px 0;
 	font-size: 18px;
 	font-weight: 500;
-	margin-bottom: 35px;
+	max-width: 480px;
+	margin: 0 auto 35px;
 	border: 1px solid #ffffff;
 	border-radius: 30px;
+}
+.b-1-submit .submit-text.active {
+	display: block;
 }
 .b-1 .submit-list {
 	margin-bottom: 30px;
@@ -165,6 +170,87 @@
 }
 .b-1 .button-list li.active::before {
 	background-color: #ff6c72;
+}
+.submit-step-4 {
+	display: none;
+}
+.submit-step-4.active {
+	display: block;
+}
+.submit-step-4 ul {
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 22px;
+}
+.submit-step-4 ul li {
+	display: block;
+	font-size: 14px;
+	font-weight: 400;
+	margin-bottom: 10px;
+	padding-left: 31px;
+	position: relative;
+	text-align: left;
+}
+.submit-step-4 ul li::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 21px;
+	height: 21px;
+	background-image: url("../i/bonus-icon.png");
+}
+.wrapper-form {
+	display: inline-block;
+	vertical-align: top;
+	width: 307px;
+	box-sizing: border-box;
+	border: 1px solid rgb(137, 137, 137);
+	border-radius: 5px;
+	padding: 8px 8px 14px 8px;
+}
+.wrapper-form p {
+	display: block;
+	background-color: rgba(70, 147, 212, 0.5);
+	border-radius: 4px;
+	padding: 9px;
+	font-weight: 500;
+	font-size: 14px;
+	margin-bottom: 8px;
+}
+.b-1 input {
+	display: block;
+	margin: 0 auto 8px;
+	position: relative;
+	z-index: 1;
+	padding-top: 14px;
+	padding-bottom: 14px;
+	border-radius: 30px;
+	border: 0;
+	color: #000000;
+	font-size: 17px;
+	font-weight: 500;
+	text-align: center;
+}
+.b-1 form input::-webkit-input-placeholder {color: rgb(115, 115, 115);}
+.b-1 form input::-moz-placeholder          {color: rgb(115, 115, 115);}/* Firefox 19+ */
+.b-1 form input:-moz-placeholder           {color: rgb(115, 115, 115);}/* Firefox 18- */
+.b-1 form input:-ms-input-placeholder      {color: rgb(115, 115, 115);}
+.b-1 form input:focus::-webkit-input-placeholder {color:transparent;}
+.b-1 form input:focus::-moz-placeholder          {color:transparent;}/* Firefox 19+ */
+.b-1 form input:focus:-moz-placeholder           {color:transparent;}/* Firefox 18- */
+.b-1 form input:focus:-ms-input-placeholder      {color:transparent;}
+.wrapper-form .button {
+	font-size: 17px;
+	font-weight: 500;
+	padding: 14px 30px;
+	border-radius: 30px;
+}
+.wrapper-form .button-text {
+	margin-top: 10px;
+	font-weight: 400;
+	font-size: 11px;
+	line-height: 1.4;
 }
 
 .b-2 {
