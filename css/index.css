@@ -566,3 +566,29 @@
 		margin: 0 20px 20px;
 	}
 }
+@media screen and (max-width: 767px) {
+	.b-1 .pasport-list li {
+		margin: 0 auto;
+		display: block;
+	}
+	.b-1 .pasport-list li:last-child {
+		margin: 0 auto;
+	}
+	.b-1 .submit-list li {
+		margin-right: 30px;
+	}
+	.b-1 .submit-list li::before {
+		width: 34px;
+	}
+	.b-3 .preim-list li {
+		padding: 20px;
+	}
+	.b-4-list li {
+		display: block;
+		width: auto;
+	}
+	.b-4 .pasport-list li {
+		display: block;
+		width: auto;
+	}
+}

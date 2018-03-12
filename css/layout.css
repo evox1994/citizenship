@@ -144,14 +144,17 @@ button:hover {
 	display: inline-block;
 	font-size: 14px;
 	font-weight: 400;
-	padding-left: 30px;
 	position: relative;
 	margin-right: 10px;
 }
 .header .country-list li:hover {
 	text-decoration: underline;
 }
-.header .country-list li::before {
+.header .country-list li a {
+	position: relative;
+	padding-left: 30px;
+}
+.header .country-list li a::before {
 	content: '';
 	position: absolute;
 	left: 0;
@@ -161,10 +164,10 @@ button:hover {
 	width: 27px;
 	height: 26px;
 }
-.header .country-list li:first-child:before {
+.header .country-list li:first-child a::before {
 	background-image: url("../i/romania.png");
 }
-.header .country-list li:last-child:before {
+.header .country-list li:last-child a::before {
 	background-image: url("../i/bulgaria.png");
 }
 .header .menu-list {
@@ -188,6 +191,10 @@ button:hover {
 	font-size: 16px;
 	font-weight: 700;
 	margin-right: 10px;
+}
+.header .mobile-menu {
+	display: none;
+	padding-top: 40px;
 }
 
 .footer {
@@ -771,5 +778,109 @@ button:hover {
 @media screen and (max-width: 767px){
 	.b-block {
 		padding: 0 10px;
+	}
+	.header .country-list, .header .menu-list {
+		display: none;
+	}
+	.header .country-list li, .header .menu-list li {
+		display: block;
+		margin: 0 auto 10px;
+	}
+	.header .menu-contacts {
+		float: right;
+	}
+	.header .menu-contacts .button {
+		display: none;
+	}
+	.header .menu-contacts .phone-a {
+		margin-right: 0;
+		margin-top: 7px;
+	}
+	.mobile-menu-btn {
+		display: block;
+		position: relative;
+		width: 43px;
+		height: 35px;
+	}
+	.mobile-menu-btn .mobile-btn-el{
+		position: absolute;
+		top: 15px;
+		left: 0;
+		width: 100%;
+		height: 5px;
+		background-color: #000000;
+		opacity: 1;
+		-webkit-transition: all 0.3s;
+		-moz-transition: all 0.3s;
+		-ms-transition: all 0.3s;
+		-o-transition: all 0.3s;
+		transition: all 0.3s;
+	}
+	.mobile-menu-btn::before {
+	    content: '';
+	    position: absolute;
+	    left: 0;
+	    top: 0;
+	    width: 100%;
+	    height: 5px;
+	    background-color: #000000;
+	    -webkit-transform-origin: left;
+	    -moz-transform-origin: left;
+	    -ms-transform-origin: left;
+	    -o-transform-origin: left;
+	    transform-origin: left;
+	    -webkit-transition: all 0.3s;
+	    -moz-transition: all 0.3s;
+	    -ms-transition: all 0.3s;
+	    -o-transition: all 0.3s;
+	    transition: all 0.3s;
+	}
+	.mobile-menu-btn::after {
+		content: '';
+	    position: absolute;
+	    left: 0;
+	    bottom: 0;
+	    width: 100%;
+	    height: 5px;
+	    background-color: #000000;
+	    -webkit-transform-origin: left;
+	    -moz-transform-origin: left;
+	    -ms-transform-origin: left;
+	    -o-transform-origin: left;
+	    transform-origin: left;
+	    -webkit-transition: all 0.3s;
+	    -moz-transition: all 0.3s;
+	    -ms-transition: all 0.3s;
+	    -o-transition: all 0.3s;
+	    transition: all 0.3s;
+	}
+	.mobile-menu-btn.active::after {
+	    -webkit-transform: rotate(-45deg);
+	    -moz-transform: rotate(-45deg);
+	    -ms-transform: rotate(-45deg);
+	    -o-transform: rotate(-45deg);
+	    transform: rotate(-45deg);
+	}
+	.mobile-menu-btn.active::before {
+	    -webkit-transform: rotate(45deg);
+	    -moz-transform: rotate(45deg);
+	    -ms-transform: rotate(45deg);
+	    -o-transform: rotate(45deg);
+	    transform: rotate(45deg);
+	}
+	.mobile-menu-btn.active .mobile-btn-el {
+		opacity: 0;
+	}
+	.header .mobile-menu.active {
+		display: block;
+	}
+	.header .mobile-menu .country-list, .header .mobile-menu .menu-list {
+		display: block;
+	}
+	.popup-more .submit-list li {
+		margin-right: 30px;
+	}
+	.popup-more .submit-list li::before {
+		width: 34px;
 	}
 }

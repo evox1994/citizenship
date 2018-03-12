@@ -25,6 +25,18 @@ $(document).ready(function(){
         return false;
     });
 
+    $('.mobile-menu-btn').click(function(){
+        if ( $(this).hasClass("active") ) {
+            $(this).removeClass("active");
+            $('.mobile-menu').removeClass('active');
+            $('.mobile-bg').removeClass("active");
+        } else {
+            $(this).addClass("active");
+            $('.mobile-menu').addClass("active");
+            $('.mobile-bg').addClass("active");
+        }
+    });
+
     $('.popup-more a').click(function(){
         if ( $('.popup-more .button-list').hasClass("active") ) {
             var el = $(this).attr('href');
