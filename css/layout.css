@@ -883,4 +883,17 @@ button:hover {
 	.popup-more .submit-list li::before {
 		width: 34px;
 	}
+	.footer .romania, .footer .bulgaria, .footer-menu-list {
+		display: block;
+		text-align: center;
+	}
+	.footer .romania .romania-a, .footer .bulgaria .bulgaria-a {
+		display: inline-block;
+	}
+	.footer-menu-list li {
+		text-align: center;
+	}
+	.footer-info-list {
+		text-align: center;
+	}
 }
