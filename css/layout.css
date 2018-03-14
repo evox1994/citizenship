@@ -52,7 +52,7 @@ button:hover {
 	font-weight: 400;
 	color: #ffffff;
 	padding: 10px 23px;
-	border-radius: 20px;
+	border-radius: 30px;
 	border: 0;
 }
 .button-red {
@@ -61,10 +61,14 @@ button:hover {
 .button-blue {
 	padding: 10px 70px;
 	background-color: #4693d4;
+	font-weight: 500;
+	font-size: 18px;
 }
 .button-bir {
 	padding: 10px 70px;
 	background-color: rgb(70, 212, 196);
+	font-weight: 500;
+	font-size: 18px;
 }
 .main-caption {
 	display: block;
@@ -131,6 +135,7 @@ button:hover {
 	background-color: #ffffff;
 	width: 100%;
 	z-index: 100;
+	border-bottom: 1px solid rgb(225, 225, 225);
 }
 .header .b-block {
 	padding-top: 10px;
@@ -199,6 +204,7 @@ button:hover {
 
 .footer {
 	background-color: #ffffff;
+	border-top: 1px solid rgb(225, 225, 225);
 }
 .footer .b-block {
 	padding-top: 32px;
@@ -360,6 +366,11 @@ button:hover {
 	border-radius: 50%;
 	background-color: rgb(137, 137, 137);
 	margin-right: 130px;
+	-webkit-transition: all 0.3s 0.5s;
+	-moz-transition: all 0.3s 0.5s;
+	-ms-transition: all 0.3s 0.5s;
+	-o-transition: all 0.3s 0.5s;
+	transition: all 0.3s 0.5s;
 }
 .popup-more .submit-list li::before {
 	content: '';
@@ -371,7 +382,25 @@ button:hover {
 	height: 2px;
 	background-color: rgb(137, 137, 137);
 }
+.popup-more .submit-list li::after {
+	content: '';
+	position: absolute;
+	top: calc(50% - 1px);
+	left: -134px;
+	display: block;
+	width: 0px;
+	height: 2px;
+	background-color: rgb(70, 212, 196);
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
 .popup-more .submit-list li:first-child:before {
+	display: none;
+}
+.popup-more .submit-list li:first-child:after {
 	display: none;
 } 
 .popup-more .submit-list li:last-child {
@@ -380,8 +409,8 @@ button:hover {
 .popup-more .submit-list li.active {
 	background-color: #46d4c4;
 }
-.popup-more .submit-list li.active::before {
-	background-color: #46d4c4;
+.popup-more .submit-list li.active::after {
+	width: 134px;
 }
 .popup-more .button-list {
 	margin-bottom: 40px;
@@ -401,6 +430,16 @@ button:hover {
 	-o-transition: all 0.3s;
 	transition: all 0.3s;
 }
+.popup-more .submit-btn-error {
+	font-size: 18px;
+	color: #ff6c72;
+	display: none;
+	margin-bottom: 10px;
+	font-weight: 500;
+}
+.popup-more .submit-btn-error.active {
+	display: block;
+}
 .popup-more .button-list li:hover {
 	cursor: pointer;
 }
@@ -414,6 +453,9 @@ button:hover {
 	width: 20px;
 	height: 20px;
 	border: 2px solid rgb(137, 137, 137);
+}
+.popup-more .button-list li.error::before {
+	border-color: #ff6c72;
 }
 .popup-more .button-list li.active::before {
 	background-color: #ff6c72;
@@ -881,6 +923,12 @@ button:hover {
 		margin-right: 30px;
 	}
 	.popup-more .submit-list li::before {
+		width: 34px;
+	}
+	.popup-more .submit-list li::after {
+		left: -34px;
+	}
+	.popup-more .submit-list li.active::after {
 		width: 34px;
 	}
 	.footer .romania, .footer .bulgaria, .footer-menu-list {

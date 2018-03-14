@@ -21,6 +21,9 @@ $(document).ready(function(){
                 $('.b-1 .button-list').css('display','none');
                 $('.b-1 .submit-btn').css('display','none');
             }
+        } else {
+            $('.b-1 .submit-btn-error').addClass("active");
+            $('.b-1 .button-list li').addClass("error");
         }
         return false;
     });
@@ -52,6 +55,9 @@ $(document).ready(function(){
                 $('.popup-more .button-list').css('display','none');
                 $('.popup-more .submit-btn').css('display','none');
             }
+        } else {
+            $('.popup-more .submit-btn-error').addClass("active");
+            $('.popup-more .button-list li').addClass("error");
         }
         return false;
     });
@@ -64,6 +70,8 @@ $(document).ready(function(){
             $('.popup-more .button-list li').removeClass("active");
             $('.popup-more .button-list').addClass("active");
             $(this).addClass("active");
+            $('.popup-more .submit-btn-error').removeClass("active");
+            $('.popup-more .button-list li').removeClass("error");
         }
     });
 

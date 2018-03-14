@@ -67,7 +67,7 @@
 
 .fixed-window {
 	position: fixed;
-	top: 235px;
+	top: 242px;
 	left: calc(50% + 315px);
 	z-index: 100;
 	width: 270px;

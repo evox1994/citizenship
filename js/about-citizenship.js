@@ -6,7 +6,7 @@ $(document).ready(function(){
 			$('.fixed-window').css({
 				'position': 'fixed',
 				'left': 'calc(50% + 315px)',
-				'top': '189px',
+				'top': '192px',
 				'bottom': 'auto',
 			});
 		} else {

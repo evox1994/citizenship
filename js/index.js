@@ -7,6 +7,8 @@ $(document).ready(function(){
 			$('.b-1 .button-list li').removeClass("active");
 			$('.b-1 .button-list').addClass("active");
 			$(this).addClass("active");
+			$('.b-1 .submit-btn-error').removeClass("active");
+            $('.b-1 .button-list li').removeClass("error");
 		}
 	});
 });

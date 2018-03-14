@@ -113,6 +113,11 @@
 	border-radius: 50%;
 	background-color: #ffffff;
 	margin-right: 130px;
+	-webkit-transition: all 0.3s 0.5s;
+	-moz-transition: all 0.3s 0.5s;
+	-ms-transition: all 0.3s 0.5s;
+	-o-transition: all 0.3s 0.5s;
+	transition: all 0.3s 0.5s;
 }
 .b-1 .submit-list li::before {
 	content: '';
@@ -124,7 +129,25 @@
 	height: 2px;
 	background-color: #ffffff;
 }
+.b-1 .submit-list li::after {
+	content: '';
+	position: absolute;
+	top: calc(50% - 1px);
+	left: -134px;
+	display: block;
+	width: 0px;
+	height: 2px;
+	background-color: #46d4c4;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
 .b-1 .submit-list li:first-child:before {
+	display: none;
+}
+.b-1 .submit-list li:first-child:after {
 	display: none;
 } 
 .b-1 .submit-list li:last-child {
@@ -133,8 +156,8 @@
 .b-1 .submit-list li.active {
 	background-color: #46d4c4;
 }
-.b-1 .submit-list li.active::before {
-	background-color: #46d4c4;
+.b-1 .submit-list li.active::after {
+	width: 134px;
 }
 .b-1 .button-list {
 	margin-bottom: 40px;
@@ -154,6 +177,16 @@
 	-o-transition: all 0.3s;
 	transition: all 0.3s;
 }
+.b-1 .submit-btn-error {
+	font-size: 18px;
+	color: #ff6c72;
+	display: none;
+	margin-bottom: 10px;
+	font-weight: 500;
+}
+.b-1 .submit-btn-error.active {
+	display: block;
+}
 .b-1 .button-list li:hover {
 	cursor: pointer;
 }
@@ -167,6 +200,9 @@
 	width: 20px;
 	height: 20px;
 	border: 2px solid #ffffff;
+}
+.b-1 .button-list li.error::before {
+	border-color: #ff6c72;
 }
 .b-1 .button-list li.active::before {
 	background-color: #ff6c72;
@@ -340,6 +376,68 @@
 	-o-transition: all 0.3s;
 	transition: all 0.3s;
 }
+.b-3 .preim-list li::before {
+	content: '';
+	position: absolute;
+	display: block;
+	background-repeat: no-repeat;
+}
+.b-3 .preim-list li:hover:before {
+	-webkit-animation: anim_icon 1s ease infinite;
+	-moz-animation: anim_icon 1s ease infinite;
+	-ms-animation: anim_icon 1s ease infinite;
+	-o-animation: anim_icon 1s ease infinite;
+	animation: anim_icon 1s ease infinite;
+}
+.b-3 .preim-list .preim-li-1::before {
+	background-image: url("../i/preim-li-1.png");
+	width: 105px;
+	height: 96px;
+	left: 89px;
+	top: calc(50% - 48px);
+}
+.b-3 .preim-list .preim-li-2::before {
+	background-image: url("../i/preim-li-2.png");
+	width: 97px;
+	height: 97px;
+	left: 81px;
+	top: calc(50% - 48px);
+}
+.b-3 .preim-list .preim-li-3::before {
+	background-image: url("../i/preim-li-3.png");
+	width: 97px;
+	height: 97px;
+	left: 89px;
+	top: calc(50% - 48px);
+}
+.b-3 .preim-list .preim-li-4::before {
+	background-image: url("../i/preim-li-4.png");
+	width: 97px;
+	height: 77px;
+	left: 89px;
+	top: calc(50% - 38px);
+}
+.b-3 .preim-list .preim-li-5::before {
+	background-image: url("../i/preim-li-5.png");
+	width: 96px;
+	height: 96px;
+	left: 81px;
+	top: calc(50% - 48px);
+}
+.b-3 .preim-list .preim-li-6::before {
+	background-image: url("../i/preim-li-6.png");
+	width: 97px;
+	height: 97px;
+	left: 89px;
+	top: calc(50% - 48px);
+}
+.b-3 .preim-list .preim-li-7::before {
+	background-image: url("../i/preim-li-7.png");
+	width: 83px;
+	height: 97px;
+	left: 95px;
+	top: calc(50% - 48px);
+}
 .b-3 .preim-list li:hover {
 	box-shadow: 0px 3px 9px 8px rgba(0, 1, 0, 0.13);
 }
@@ -393,6 +491,9 @@
 	-ms-transition: all 0.3s;
 	-o-transition: all 0.3s;
 	transition: all 0.3s;
+}
+.b-4-list li:last-child img {
+	margin: 9px auto 40px;
 }
 .b-4-list li:hover {
 	-webkit-transform: scale(1.1);
@@ -460,11 +561,11 @@
 	top: -3px;
 	width: 32px;
 	height: 32px;
-	-webkit-transition: all 0.3s;
-	-moz-transition: all 0.3s;
-	-ms-transition: all 0.3s;
-	-o-transition: all 0.3s;
-	transition: all 0.3s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
 }
 .b-5-contacts-list li:first-child:before {
 	background-image: url("../i/phone-icon.png");
@@ -476,11 +577,11 @@
 	background-image: url("../i/skype-icon.png");
 }
 .b-5-contacts-list li:hover:before {
-	-webkit-transform: translateY(-10px);
-	-moz-transform: translateY(-10px);
-	-ms-transform: translateY(-10px);
-	-o-transform: translateY(-10px);
-	transform: translateY(-10px);
+	-webkit-transform: translateY(-5px);
+	-moz-transform: translateY(-5px);
+	-ms-transform: translateY(-5px);
+	-o-transform: translateY(-5px);
+	transform: translateY(-5px);
 }
 .b-5 form {
 	display: block;
@@ -580,8 +681,42 @@
 	.b-1 .submit-list li::before {
 		width: 34px;
 	}
+	.b-1 .submit-list li::after {
+		left: -34px;
+	}
+	.b-1 .submit-list li.active::after {
+		width: 34px;
+	}
 	.b-3 .preim-list li {
-		padding: 20px;
+		padding: 137px 20px 20px;
+	}
+	.b-3 .preim-list .preim-li-1::before {
+		left: calc(50% - 52px);
+		top: 20px;
+	}
+	.b-3 .preim-list .preim-li-2::before {
+		left: calc(50% - 48px);
+		top: 20px;
+	}
+	.b-3 .preim-list .preim-li-3::before {
+		left: calc(50% - 48px);
+		top: 20px;
+	}
+	.b-3 .preim-list .preim-li-4::before {
+		left: calc(50% - 48px);
+		top: 20px;
+	}
+	.b-3 .preim-list .preim-li-5::before {
+		left: calc(50% - 48px);
+		top: 20px;
+	}
+	.b-3 .preim-list .preim-li-6::before {
+		left: calc(50% - 48px);
+		top: 20px;
+	}
+	.b-3 .preim-list .preim-li-7::before {
+		left: calc(50% - 41px);
+		top: 20px;
 	}
 	.b-4-list li {
 		display: block;
