@@ -23,6 +23,20 @@
 .b-1 .pasport-list {
 	margin-bottom: 25px;
 }
+.b-1 .pasport-list li:first-child .pasport-anim::before {
+	-webkit-animation: blick 4s linear 1s infinite;
+    -moz-animation: blick 4s linear 1s infinite;
+    -ms-animation: blick 4s linear 1s infinite;
+    -o-animation: blick 4s linear 1s infinite;
+    animation: blick 4s linear 1s infinite;
+}
+.b-1 .pasport-list li:last-child .pasport-anim::before {
+	-webkit-animation: blick 4s linear 2s infinite;
+    -moz-animation: blick 4s linear 2s infinite;
+    -ms-animation: blick 4s linear 2s infinite;
+    -o-animation: blick 4s linear 2s infinite;
+    animation: blick 4s linear 2s infinite;
+}
 .b-1 .pasport-list li {
 	display: inline-block;
 	vertical-align: top;
@@ -513,6 +527,24 @@
 }
 .b-4-list li p span {
 	color: rgb(255, 108, 114);
+}
+.b-4 .pasport-list li:first-child .pasport-anim::before {
+	top: -52px;
+	right: -59px;
+	-webkit-animation: blick 4s linear 1s infinite;
+    -moz-animation: blick 4s linear 1s infinite;
+    -ms-animation: blick 4s linear 1s infinite;
+    -o-animation: blick 4s linear 1s infinite;
+    animation: blick 4s linear 1s infinite;
+}
+.b-4 .pasport-list li:last-child .pasport-anim::before {
+	top: -52px;
+	right: -59px;
+	-webkit-animation: blick 4s linear 2s infinite;
+    -moz-animation: blick 4s linear 2s infinite;
+    -ms-animation: blick 4s linear 2s infinite;
+    -o-animation: blick 4s linear 2s infinite;
+    animation: blick 4s linear 2s infinite;
 }
 .b-4 .pasport-list li {
 	display: inline-block;

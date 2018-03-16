@@ -6,6 +6,8 @@ $(document).ready(function(){
         $('.background').height( $(window).height() + 100 );
     });	
 
+    $('.phone-input').mask("+7 (999) 999-99-99");
+
     $('.b-1-submit a').click(function(){
         if ( $('.b-1 .button-list').hasClass("active") ) {
             var el = $(this).attr('href');
