@@ -680,6 +680,9 @@
 }
 
 @media screen and (max-width: 767px) {
+	.b-1-bonus-list {
+		text-align: left;
+	}
 	.b-1 .submit-list li {
 		margin-right: 30px;
 	}

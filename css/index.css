@@ -703,6 +703,7 @@
 	.b-1 .pasport-list li {
 		margin: 0 auto;
 		display: block;
+		text-align: center;
 	}
 	.b-1 .pasport-list li:last-child {
 		margin: 0 auto;
