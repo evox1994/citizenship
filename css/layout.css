@@ -204,12 +204,41 @@ button:hover {
 .header .country-list li a {
 	position: relative;
 	padding-left: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.header .country-list li ul {
+	display: none;
+	padding: 20px;
+	background-color: #ffffff;
+	position: fixed;
+	top: 48px;
+}
+.header .country-list li ul li {
+	padding-left: 20px;
+	position: relative;
+	display: block;
+	text-align: left;
+}
+.header .country-list li ul li::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: calc(50% - 3px);
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background-color: #4693d4;
+	background-image: none;
+}
+.header .country-list li:hover ul {
+	display: block;
 }
 .header .country-list li a::before {
 	content: '';
 	position: absolute;
 	left: 0;
-	top: -5px;
+	top: calc(50% - 13px);
 	display: block;
 	background-repeat: no-repeat;
 	width: 27px;
@@ -220,6 +249,12 @@ button:hover {
 }
 .header .country-list li:last-child a::before {
 	background-image: url("../i/bulgaria.png");
+}
+.header .country-list li ul li a {
+	padding-left: 0;
+}
+.header .country-list li ul li a::before {
+	background-image: none !important;
 }
 .header .menu-list {
 	display: inline-block;

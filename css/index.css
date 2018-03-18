@@ -390,65 +390,42 @@
 	-o-transition: all 0.3s;
 	transition: all 0.3s;
 }
-.b-3 .preim-list li::before {
-	content: '';
+.b-3 .preim-list li img {
 	position: absolute;
 	display: block;
-	background-repeat: no-repeat;
 }
-.b-3 .preim-list li:hover:before {
+.b-3 .preim-list li:hover img {
 	-webkit-animation: anim_icon 1s ease infinite;
 	-moz-animation: anim_icon 1s ease infinite;
 	-ms-animation: anim_icon 1s ease infinite;
 	-o-animation: anim_icon 1s ease infinite;
 	animation: anim_icon 1s ease infinite;
 }
-.b-3 .preim-list .preim-li-1::before {
-	background-image: url("../i/preim-li-1.png");
-	width: 105px;
-	height: 96px;
+.b-3 .preim-list .preim-li-1 img {
 	left: 89px;
 	top: calc(50% - 48px);
 }
-.b-3 .preim-list .preim-li-2::before {
-	background-image: url("../i/preim-li-2.png");
-	width: 97px;
-	height: 97px;
+.b-3 .preim-list .preim-li-2 img {
 	left: 81px;
 	top: calc(50% - 48px);
 }
-.b-3 .preim-list .preim-li-3::before {
-	background-image: url("../i/preim-li-3.png");
-	width: 97px;
-	height: 97px;
+.b-3 .preim-list .preim-li-3 img {
 	left: 89px;
 	top: calc(50% - 48px);
 }
-.b-3 .preim-list .preim-li-4::before {
-	background-image: url("../i/preim-li-4.png");
-	width: 97px;
-	height: 77px;
+.b-3 .preim-list .preim-li-4 img {
 	left: 89px;
 	top: calc(50% - 38px);
 }
-.b-3 .preim-list .preim-li-5::before {
-	background-image: url("../i/preim-li-5.png");
-	width: 96px;
-	height: 96px;
+.b-3 .preim-list .preim-li-5 img {
 	left: 81px;
 	top: calc(50% - 48px);
 }
-.b-3 .preim-list .preim-li-6::before {
-	background-image: url("../i/preim-li-6.png");
-	width: 97px;
-	height: 97px;
+.b-3 .preim-list .preim-li-6 img{
 	left: 89px;
 	top: calc(50% - 48px);
 }
-.b-3 .preim-list .preim-li-7::before {
-	background-image: url("../i/preim-li-7.png");
-	width: 83px;
-	height: 97px;
+.b-3 .preim-list .preim-li-7 img {
 	left: 95px;
 	top: calc(50% - 48px);
 }
@@ -723,31 +700,31 @@
 	.b-3 .preim-list li {
 		padding: 137px 20px 20px;
 	}
-	.b-3 .preim-list .preim-li-1::before {
+	.b-3 .preim-list .preim-li-1 img{
 		left: calc(50% - 52px);
 		top: 20px;
 	}
-	.b-3 .preim-list .preim-li-2::before {
+	.b-3 .preim-list .preim-li-2 img {
 		left: calc(50% - 48px);
 		top: 20px;
 	}
-	.b-3 .preim-list .preim-li-3::before {
+	.b-3 .preim-list .preim-li-3 img {
 		left: calc(50% - 48px);
 		top: 20px;
 	}
-	.b-3 .preim-list .preim-li-4::before {
+	.b-3 .preim-list .preim-li-4 img {
 		left: calc(50% - 48px);
 		top: 20px;
 	}
-	.b-3 .preim-list .preim-li-5::before {
+	.b-3 .preim-list .preim-li-5 img {
 		left: calc(50% - 48px);
 		top: 20px;
 	}
-	.b-3 .preim-list .preim-li-6::before {
+	.b-3 .preim-list .preim-li-6 img {
 		left: calc(50% - 48px);
 		top: 20px;
 	}
-	.b-3 .preim-list .preim-li-7::before {
+	.b-3 .preim-list .preim-li-7 img {
 		left: calc(50% - 41px);
 		top: 20px;
 	}
