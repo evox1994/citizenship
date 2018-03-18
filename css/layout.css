@@ -883,6 +883,9 @@ button:hover {
 	.header .country-list li {
 		margin: 0 10px;
 	}
+	.header .country-list li ul {
+		display: none !important;
+	}
 	.footer .romania, .footer .bulgaria, .footer-menu-list {
 		margin: 0 10px 20px;
 	}
