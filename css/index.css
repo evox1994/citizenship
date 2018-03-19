@@ -670,7 +670,7 @@
 	}
 	.b-2-bonus-list li {
 		display: block;
-		width: 100%;
+		width: 100% !important;
 	}
 	.b-5-contacts-list li {
 		margin: 0 20px 20px;
