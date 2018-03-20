@@ -189,7 +189,7 @@ button:hover {
 }
 .header .country-list {
 	display: inline-block;
-	margin-right: 45px;
+	margin-right: 22px;
 }
 .header .country-list li {
 	display: inline-block;
@@ -197,9 +197,32 @@ button:hover {
 	font-weight: 400;
 	position: relative;
 	margin-right: 10px;
+	padding-right: 25px;
+}
+.header .country-list li::after {
+	content: '';
+	position: absolute;
+	right: 0;
+	top: calc(50% - 9px);
+	width: 19px;
+	height: 19px;
+	background-image: url("../i/arr-open.png");
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
 }
 .header .country-list li:hover {
 	text-decoration: underline;
+}
+.header .country-list li:hover:after,
+.header .country-list .country-item.active::after {
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	transform: rotate(180deg);
 }
 .header .country-list li a {
 	position: relative;
@@ -219,6 +242,7 @@ button:hover {
 	position: relative;
 	display: block;
 	text-align: left;
+	padding-right: 0;
 }
 .header .country-list li ul li::before {
 	content: '';
@@ -230,6 +254,9 @@ button:hover {
 	border-radius: 50%;
 	background-color: #4693d4;
 	background-image: none;
+}
+.header .country-list li ul li::after {
+	display: none;
 }
 .header .country-list li:hover ul {
 	display: block;
@@ -258,7 +285,7 @@ button:hover {
 }
 .header .menu-list {
 	display: inline-block;
-	margin-right: 55px;
+	margin-right: 35px;
 }
 .header .menu-list li {
 	display: inline-block;
@@ -281,6 +308,9 @@ button:hover {
 .header .mobile-menu {
 	display: none;
 	padding-top: 40px;
+}
+.mobile-background {
+	display: none;
 }
 
 .footer {
@@ -882,9 +912,22 @@ button:hover {
 	}
 	.header .country-list li {
 		margin: 0 10px;
+		z-index: 10;
+	}
+	.header .country-list li:hover:after {
+		-webkit-transform: rotate(0deg);
+		-moz-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+		transform: rotate(0deg);
 	}
 	.header .country-list li ul {
 		display: none !important;
+		z-index: 10;
+		top: 38px;
+	}
+	.header .country-list li.active ul {
+		display: block !important;
 	}
 	.footer .romania, .footer .bulgaria, .footer-menu-list {
 		margin: 0 10px 20px;
@@ -905,12 +948,37 @@ button:hover {
 	.b-block {
 		padding: 0 10px;
 	}
+	.header {
+		max-height: 100vh;
+		overflow-y: auto;
+	}
+	.mobile-background {
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background-color: transparent;
+		left: 0;
+		top: 0;
+		z-index: -1;
+	}
 	.header .country-list, .header .menu-list {
 		display: none;
 	}
 	.header .country-list li, .header .menu-list li {
 		display: block;
 		margin: 0 auto 10px;
+	}
+	.header .country-list li::after {
+		top: 0;
+	}
+	.header .country-list li:hover {
+		text-decoration: none;
+	}
+	.header .country-list li a:hover {
+		text-decoration: underline;
+	}
+	.header .country-list li.active ul {
+		position: static;
 	}
 	.header .menu-contacts {
 		float: right;
@@ -1001,6 +1069,9 @@ button:hover {
 		opacity: 0;
 	}
 	.header .mobile-menu.active {
+		display: block;
+	}
+	.header .mobile-menu.active .mobile-background {
 		display: block;
 	}
 	.header .mobile-menu .country-list, .header .mobile-menu .menu-list {

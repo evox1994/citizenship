@@ -8,6 +8,23 @@ $(document).ready(function(){
 
     $('.phone-input').mask("+7 (999) 999-99-99");
 
+    $('.country-list .country-item').click(function(){
+        if ( $(window).width() < 1280 ) {
+            if ( $(this).hasClass("active") ) {
+                $(this).removeClass("active");
+            } else {
+                $('.country-list .country-item').removeClass("active");
+                $(this).addClass("active");
+            }
+        }
+    });
+
+    $('.mobile-background').click(function(){
+        $('.mobile-background').removeClass("active");
+        $('.mobile-menu').removeClass('active');
+        $('.mobile-menu-btn').removeClass('active');
+    });
+
     $('.b-1-submit a').click(function(){
         if ( $('.b-1 .button-list').hasClass("active") ) {
             var el = $(this).attr('href');
@@ -34,11 +51,9 @@ $(document).ready(function(){
         if ( $(this).hasClass("active") ) {
             $(this).removeClass("active");
             $('.mobile-menu').removeClass('active');
-            $('.mobile-bg').removeClass("active");
         } else {
             $(this).addClass("active");
             $('.mobile-menu').addClass("active");
-            $('.mobile-bg').addClass("active");
         }
     });
 
