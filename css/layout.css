@@ -655,6 +655,10 @@ button:hover {
 	color: rgb(137, 137, 137);
 }
 
+.submit-step-4 ul li.false::before {
+	background-image: url("../i/bonus-icon-3.png");
+}
+
 
 @-webkit-keyframes pulse {
   0% {
