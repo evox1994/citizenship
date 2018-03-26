@@ -241,6 +241,12 @@
 	position: relative;
 	text-align: left;
 }
+.submit-step-4 ul li span {
+	display: none;
+}
+.submit-step-4 ul li span.active {
+	display: block;
+}
 .submit-step-4 ul li::before {
 	content: '';
 	position: absolute;

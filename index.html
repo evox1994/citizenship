@@ -139,15 +139,24 @@
 					</ul>
 					<div class="submit-btn-error">Выберите ответ</div>
 					<ul class="button-list">
-						<li>Да</li>
-						<li>Нет</li>
+						<li class="true-btn" data-text="#list-item-1-1">Да</li>
+						<li class="false-btn" data-text="#list-item-1-1">Нет</li>
 					</ul>
 					<a href="#li-step-1-1" class="button button-blue btn-anim submit-btn">Далее<span></span></a>
 					<div class="submit-step-4">
 						<ul>
-							<li class="false">Мы попробуем найти<br>Ваших родственников</li>
-							<li>Уточним возможность<br>получения с Вашей<br>судимостью</li>
-							<li>Попробуем восстановить<br>Вас как гражданина ЕС</li>
+							<li id="list-item-1-1" data-next="#list-item-2-1">
+								<span class="true-span">Мы попробуем найти<br>Ваших родственников</span>
+								<span class="false-span">Мы свяжемся с<br>Вашими родственниками</span>
+							</li>
+							<li id="list-item-2-1" data-next="#list-item-3-1">
+								<span class="true-span">Уточним возможность<br>получения с Вашей<br>судимостью</span>
+								<span class="false-span">Уточним возможность<br>получения Вами<br>гражданства</span>
+							</li>
+							<li id="list-item-3-1">
+								<span class="true-span">Попробуем восстановить<br>Вас как гражданина ЕС</span>
+								<span class="false-span">Попробуем<br>зарегестрировать Вас<br>как гражданина ЕС</span>
+							</li>
 						</ul>
 						<div class="wrapper-form">
 							<p>Оставьте заявку, чтобы мы могли предложить варианты,  как в Вашем случае получить гражданство</p>

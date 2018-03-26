@@ -28,6 +28,7 @@ $(document).ready(function(){
     $('.b-1-submit a').click(function(){
         if ( $('.b-1 .button-list').hasClass("active") ) {
             var el = $(this).attr('href');
+            var el_2 = $('.b-1 .button-list li.false-btn').data("text");
             var next = $(el).data('next');
             var text_block = $(el).data('text');
             $('.b-1 .submit-text').removeClass("active");
@@ -40,6 +41,8 @@ $(document).ready(function(){
                 $('.b-1 .button-list').css('display','none');
                 $('.b-1 .submit-btn').css('display','none');
             }
+            $('.b-1 .button-list li.false-btn').data("text",$(el_2).data("next"));
+            $('.b-1 .button-list li.true-btn').data("text",$(el_2).data("next"));
         } else {
             $('.b-1 .submit-btn-error').addClass("active");
             $('.b-1 .button-list li').addClass("error");
