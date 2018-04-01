@@ -611,6 +611,12 @@
 	color: rgb(220, 220, 220);
 	line-height: 1.6;
 }
+.b-6 .button-text a {
+	color: rgb(220, 220, 220);
+}
+.b-6 .button-text a:hover {
+	text-decoration: underline;
+}
 .b-6 form input::-webkit-input-placeholder {color:#ffffff;}
 .b-6 form input::-moz-placeholder          {color:#ffffff;}/* Firefox 19+ */
 .b-6 form input:-moz-placeholder           {color:#ffffff;}/* Firefox 18- */

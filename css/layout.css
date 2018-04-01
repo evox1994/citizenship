@@ -87,6 +87,11 @@ button:hover {
 	background-size: cover;
 	background-image: url("../i/background-image.jpg");
 	background-position: center;
+	overflow: hidden;
+}
+.background video {
+	width: 100%;
+	height: auto;
 }
 .btn-anim {
 	position: relative;
@@ -321,9 +326,27 @@ button:hover {
 	padding-top: 32px;
 	padding-bottom: 50px;
 }
+.footer-logo {
+	display: inline-block;
+	vertical-align: top;
+	text-align: left;
+}
+.footer-logo-a {
+	display: block;
+	font-weight: 700;
+	font-size: 25px;
+	color: rgb(70, 147, 212);
+	margin-bottom: 30px;
+}
+.footer-logo p {
+	display: block;
+	font-size: 14px;
+	font-weight: 400;
+	margin-bottom: 15px;
+}
 .footer .romania, .footer .bulgaria {
 	display: inline-block;
-	vertical-align: middle;
+	vertical-align: top;
 	text-align: left;
 	margin: 0 25px 20px;
 }
@@ -365,8 +388,8 @@ button:hover {
 }
 .footer-menu-list {
 	display: inline-block;
-	vertical-align: middle;
-	margin: 0 60px;
+	vertical-align: top;
+	margin: 0 20px;
 }
 .footer-menu-list li {
 	text-align: left;
@@ -376,46 +399,35 @@ button:hover {
 .footer .romania a:hover, .footer .bulgaria a:hover, .footer-menu-list a:hover, .footer-info-list a:hover {
 	text-decoration: underline;
 }
-.footer .logo-atk {
-	display: inline-block;
-	vertical-align: top;
-	margin-left: 20px;
-}
-.footer .logo-atk img {
-	display: block;
-}
-.footer .logo-atk span {
-	display: block;
-	margin-top: 7px;
-	text-align: left;
-	font-size: 10px;
-	color: rgb(28, 28, 28);
-	line-height: 1.2;
-	font-weight: 400;
-}
-.footer-bottom {
-	text-align: left;
-}
 .footer-info-list {
-	display: inline-block;
-	vertical-align: bottom;
+	display: block;
 	text-align: left;
-	margin-right: 30px;
 }
 .footer-info-list li {
-	display: inline-block;
-	margin-right: 20px;
+	display: block;
 	font-weight: 400;
 	font-size: 12px;
+	margin-bottom: 5px;
+}
+.footer-about {
+	display: inline-block;
+	vertical-align: top;
+}
+.footer-about-a {
+	display: block;
+	font-weight: 700;
+	font-size: 24px;
+	color: #000000;
+	margin-bottom: 15px;
 }
 .footer .social-list {
-	display: inline-block;
-	vertical-align: bottom;
+	display: block;
+	vertical-align: top;
 }
 .footer .social-list li {
 	display: inline-block;
 	vertical-align: top;
-	margin: 0 7px;
+	margin: 0 5px;
 }
 .footer .social-list li:hover img {
 	-webkit-animation: anim_icon 1s ease infinite;
@@ -652,6 +664,9 @@ button:hover {
 	font-weight: 400;
 	font-size: 11px;
 	line-height: 1.4;
+	color: rgb(137, 137, 137);
+}
+.popup-more .wrapper-form .button-text a {
 	color: rgb(137, 137, 137);
 }
 
@@ -933,22 +948,29 @@ button:hover {
 	.header .country-list li.active ul {
 		display: block !important;
 	}
-	.footer .romania, .footer .bulgaria, .footer-menu-list {
+	.footer .romania, .footer .bulgaria {
+		display: inline-block;
+		margin: 0 30px 20px;
+	}
+	.footer-menu-list {
+		display: inline-block;
 		margin: 0 10px 20px;
 	}
-	.footer .logo-atk {
-		margin-left: 0;
-		margin-bottom: 20px;
+	.footer-about {
+		display: block;
 	}
-	.footer-bottom {
-		text-align: center;
+	.footer-logo {
+		margin: 0 80px 30px;
 	}
-	.footer-info-list {
-		margin-right: 0;
-		margin-bottom: 20px;
+	.background video {
+		width: auto;
+		height: calc(100vh + 100px);
 	}
 }
 @media screen and (max-width: 767px){
+	.background video {
+		display: none;
+	}
 	.b-block {
 		padding: 0 10px;
 	}
@@ -1100,10 +1122,19 @@ button:hover {
 	.footer .romania .romania-a, .footer .bulgaria .bulgaria-a {
 		display: inline-block;
 	}
+	.footer .romania, .footer-bulgaria {
+		margin: 0 auto 20px;
+	}
 	.footer-menu-list li {
 		text-align: center;
 	}
 	.footer-info-list {
 		text-align: center;
+	}
+	.footer-about-a {
+		display: inline-block;
+	}
+	.footer-logo {
+		margin: 0 auto 20px;
 	}
 }
